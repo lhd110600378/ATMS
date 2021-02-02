@@ -53,7 +53,7 @@
 #1.2 1注册功能----分层版
 #这一部分是用户需要看到的内容
 from interface.user_interface import regiseter_interface,login_interface,check_balance_interface
-from interface.blank_interface import withdraw_interface
+from interface.blank_interface import withdraw_interface,repay_interface
 from lib.common import passwd_md5,login_auth
 
 
@@ -102,7 +102,7 @@ def check_balance():
     print(res)
 # 4.提现功能
 @login_auth
-def withdraw(money):
+def withdraw():
     '''
     提现逻辑：
             账户已冻结：提示：账户已被冻结，不能进行提现操作
@@ -114,12 +114,32 @@ def withdraw(money):
             3.提现失败，余额不足
     :param:money:提现金额数
     '''
-    withdraw_interface(is_load, money)
-    pass
+    while True:
+        money = int(input("请输入提现金额:"))
+        flag,msg = withdraw_interface(is_load, money)
+        if flag:
+            print(msg)
+            break
+        else:
+            print(msg)
+            break
+
 # 5.还款功能
 @login_auth
 def repay():
-    pass
+    '''
+    :return:
+    '''
+    while True:
+        repay_money = int(input("请输入还款金额:"))
+        flag, msg = repay_interface(is_load, repay_money)
+        if flag:
+            print(msg)
+            break
+        else:
+            print(msg)
+            break
+
 # 6.转账功能
 @login_auth
 def transfer():
