@@ -210,10 +210,26 @@ def admin():
     3.冻结账户
     :return:
     '''
+
+    def modify_quota(choice):
+        balance = int(input("请输入修改额度的金额： ").strip())
+        flag, msg = admin_interface(choice,is_load, balance=balance)
+        if flag:
+            print(msg)
+        else:
+            print(msg)
+    def lock(choice):
+        choice = int(choice)
+        flag, msg = admin_interface(choice, is_load)
+        if flag:
+            print(msg)
+        else:
+            print(msg)
+
     fuc_dic = {
         "1": ("添加账户", regiseter),
-        "2" :  ("修改额度",),
-        "3" :  ("账户冻结/解冻",),
+        "2" :  ("修改额度",modify_quota),
+        "3" :  ("账户冻结/解冻",lock),
         "4" :  ("退出",)}
     while True:
         print("======管理员中心======")
@@ -223,25 +239,9 @@ def admin():
         if choice not in fuc_dic:
             print("请输入正确功能编号")
             continue
-        elif choice == "1":
-            (fuc_dic.get(choice))[1]()
-        elif choice == "2":
-            choice = int(choice)
-            balance = int(input("请输入修改额度的金额： ").strip())
-            flag,msg = admin_interface(choice,is_load,balance)
-            if flag:
-                print(msg)
-            else:
-                print(msg)
-        elif choice == "3":
-            choice = int(choice)
-            flag,msg = admin_interface(choice,is_load)
-            if flag:
-                print(msg)
-            else:
-                print(msg)
-        else:
+        elif choice == "4":
             break
+        (fuc_dic.get(choice))[1](choice)
 
 
 #创建函数字典

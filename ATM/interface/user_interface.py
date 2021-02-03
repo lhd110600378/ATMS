@@ -52,14 +52,14 @@ def check_balance_interface(username):
 
 #管理员功能
 
-def admin_interface(fuc_id:int, username:str,balance=None)->tuple:
+def admin_interface(fuc_id, username:str,balance=None):
     user_dic = db_handler.select(username)
-    if fuc_id == 2:
+    if fuc_id == "2":
         user_dic['balance'] = balance
         msg = f"【{username}】用户的当前额度为:￥{user_dic['balance']}元"
         db_handler.save(user_dic)
-        return True,msg
-    else:
+        return True, msg
+    elif fuc_id == "3":
         user_dic['locked'] = True
         msg = f"【{username}】冻结/解冻操作成功，用户的当前为冻结状态为:{user_dic['locked'] }"
         db_handler.save(user_dic)
