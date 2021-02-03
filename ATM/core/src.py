@@ -53,7 +53,7 @@
 #1.2 1注册功能----分层版
 #这一部分是用户需要看到的内容
 from interface.user_interface import regiseter_interface,login_interface,check_balance_interface
-from interface.blank_interface import withdraw_interface,repay_interface
+from interface.blank_interface import withdraw_interface,repay_interface,transfer_interface
 from lib.common import passwd_md5,login_auth
 
 
@@ -143,7 +143,15 @@ def repay():
 # 6.转账功能
 @login_auth
 def transfer():
-    pass
+    while True:
+        transfer_money = int(input("请输入转账金额:"))
+        flag, msg = transfer_interface(is_load, transfer_money)
+        if flag:
+            print(msg)
+            break
+        else:
+            print(msg)
+            break
 # 7.查看流水
 @login_auth
 def check_flow():

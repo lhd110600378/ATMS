@@ -45,3 +45,21 @@ def repay_interface(username, repay_money):
         db_handler.save(user_dic)
         msg =f"还款成功，还款金额为{repay_money}，当前账户余额为{balance}"
         return True, msg
+
+
+def transfer_interface(username, transfer_moeney):
+    user_dic = db_handler.select(username)
+    balance = user_dic['balance']
+    if user_dic['locked']:
+        msg = "账户已被冻结，请在前台办理手续"
+        return False, msg
+    else:
+        if balance >= transfer_moeney:
+            balance -= transfer_moeney
+            user_dic['balance'] = balance
+            msg = f"转账成功，转账金额为{transfer_moeney}，当前账户余额为{balance}"
+            db_handler.save(user_dic)
+            return True, msg
+        else:
+            msg = "当前账户余额不足"
+            return False, msg
