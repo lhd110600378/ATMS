@@ -6,6 +6,7 @@
 #存放日志
 #注册接口
 from lib.common import passwd_md5
+from db import db_handler
 def regiseter_interface(username,password,balance=15000):
     from db import db_handler
     #在数据层查找用户信息，判断返回数据是否为None:
@@ -42,10 +43,27 @@ def login_interface(username,password):
     else:
         return False,"该用户不存在,请重新输入"
 
-
+#查询余额接口
 def check_balance_interface(username):
-    from db import db_handler
+
     user_dic = db_handler.select(username)
     return f"【{username}】用户的当前余额为:￥{user_dic['balance']}元"
+
+
+#管理员功能
+
+def admin_interface(fuc_id:int, username:str,balance=None)->tuple:
+    user_dic = db_handler.select(username)
+    if fuc_id == 2:
+        user_dic['balance'] = balance
+        msg = f"【{username}】用户的当前额度为:￥{user_dic['balance']}元"
+        db_handler.save(user_dic)
+        return True,msg
+    else:
+        user_dic['locked'] = True
+        msg = f"【{username}】冻结/解冻操作成功，用户的当前为冻结状态为:{user_dic['locked'] }"
+        db_handler.save(user_dic)
+        return True,msg
+
 
 

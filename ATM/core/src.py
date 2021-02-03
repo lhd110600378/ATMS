@@ -52,8 +52,8 @@
 
 #1.2 1注册功能----分层版
 #这一部分是用户需要看到的内容
-from interface.user_interface import regiseter_interface,login_interface,check_balance_interface
-from interface.blank_interface import withdraw_interface,repay_interface,transfer_interface
+from interface.user_interface import regiseter_interface,login_interface,check_balance_interface,admin_interface
+from interface.blank_interface import withdraw_interface,repay_interface,transfer_interface,check_flow_interface
 from lib.common import passwd_md5,login_auth
 
 
@@ -115,14 +115,21 @@ def withdraw():
     :param:money:提现金额数
     '''
     while True:
-        money = int(input("请输入提现金额:"))
-        flag,msg = withdraw_interface(is_load, money)
-        if flag:
-            print(msg)
-            break
+        money = input("请输入提现金额:")
+        if not money.isdigit():
+            print("请输入正确的金额")
+            continue
+        money = int(money)
+        if money>0:
+            flag,msg = withdraw_interface(is_load, money)
+            if flag:
+                print(msg)
+                break
+            else:
+                print(msg)
+                break
         else:
-            print(msg)
-            break
+            print("提现金额不能为负数")
 
 # 5.还款功能
 @login_auth
@@ -131,31 +138,61 @@ def repay():
     :return:
     '''
     while True:
-        repay_money = int(input("请输入还款金额:"))
-        flag, msg = repay_interface(is_load, repay_money)
-        if flag:
-            print(msg)
-            break
+        money = input("请输入还款金额:")
+        if not money.isdigit():
+            print("请输入正确的金额")
+            continue
+        money = int(money)
+        if money>0:
+            flag,msg = repay_interface(is_load, money)
+            if flag:
+                print(msg)
+                break
+            else:
+                print(msg)
+                break
         else:
-            print(msg)
-            break
+            print("还款金额不能为负数")
 
 # 6.转账功能
 @login_auth
 def transfer():
+    '''
+    1.输入转账金额
+    2.输入转账目标
+    :return:
+    '''
     while True:
-        transfer_money = int(input("请输入转账金额:"))
-        flag, msg = transfer_interface(is_load, transfer_money)
-        if flag:
-            print(msg)
-            break
+        money = input("请输入转账金额:")
+        person = input("请输入转账的人名:")
+
+        if not money.isdigit():
+            print("请输入正确的金额")
+            continue
+        money = int(money)
+        if money>0:
+            flag,msg = transfer_interface(person, is_load, money)
+            if flag:
+                print(msg)
+                break
+            else:
+                print(msg)
+                break
         else:
-            print(msg)
-            break
+            print("转账金额不能为负数")
+
 # 7.查看流水
 @login_auth
 def check_flow():
-    pass
+    flow_list =  check_flow_interface(is_load)
+
+    if flow_list:
+        for flow in flow_list:
+            print(flow)
+    else:
+        print("当前账户不存在交易流水")
+
+
 # 8.购物功能
 @login_auth
 def shopping():
@@ -165,8 +202,47 @@ def shopping():
 def check_buy_car():
     pass
 # 10.管理员功能
+@login_auth
 def admin():
-    pass
+    '''
+    1.添加账户
+    2.修改额度
+    3.冻结账户
+    :return:
+    '''
+    fuc_dic = {
+        "1": ("添加账户", regiseter),
+        "2" :  ("修改额度",),
+        "3" :  ("账户冻结/解冻",),
+        "4" :  ("退出",)}
+    while True:
+        print("======管理员中心======")
+        for k,v in fuc_dic.items():
+            print(k, v[0])
+        choice = input("请输入功能编号： ").strip()
+        if choice not in fuc_dic:
+            print("请输入正确功能编号")
+            continue
+        elif choice == "1":
+            (fuc_dic.get(choice))[1]()
+        elif choice == "2":
+            choice = int(choice)
+            balance = int(input("请输入修改额度的金额： ").strip())
+            flag,msg = admin_interface(choice,is_load,balance)
+            if flag:
+                print(msg)
+            else:
+                print(msg)
+        elif choice == "3":
+            choice = int(choice)
+            flag,msg = admin_interface(choice,is_load)
+            if flag:
+                print(msg)
+            else:
+                print(msg)
+        else:
+            break
+
 
 #创建函数字典
 fuc_dic = {

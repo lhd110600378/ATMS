@@ -1,1 +1,1 @@
-{"username": "1", "password": "3206b32df9f13559c88bbc19610b406a", "balance": 14980, "flow": [], "shop_car": {}, "locked": false}
+{"username": "1", "password": "3206b32df9f13559c88bbc19610b406a", "balance": 1000000, "flow": ["还款成功，还款金额为1000，当前账户余额为15970", "提现成功，提现金额为2000，当前账户余额为13970", "1转账成功，转账金额为250$，1余额为13720$"], "shop_car": {}, "locked": true}
