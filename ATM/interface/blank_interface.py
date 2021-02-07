@@ -3,9 +3,11 @@
 银行相关接口
 
 '''
-#提现接口
+# 提现接口
 from db import db_handler
-def withdraw_interface(username,money):
+
+
+def withdraw_interface(username, money):
     '''
     提现逻辑：
             账户已冻结：提示：账户已被冻结，不能进行提现操作
@@ -22,20 +24,21 @@ def withdraw_interface(username,money):
     balance = user_dic['balance']
     if user_dic['locked']:
         msg = "账户已被冻结，请在前台办理手续"
-        return False,msg
+        return False, msg
     else:
-        if balance>=money:
-            balance-=money
+        if balance >= money:
+            balance -= money
             user_dic['balance'] = balance
-            msg =f"【{username}】提现成功，提现金额为{money}$，当前账户余额为{balance}$"
+            msg = f"【{username}】提现成功，提现金额为{money}$，当前账户余额为{balance}$"
             user_dic['flow'].append(msg)
             db_handler.save(user_dic)
-            return True,msg
+            return True, msg
         else:
             msg = "当前账户额度不足"
-            return False,msg
+            return False, msg
 
-#还款接口
+
+# 还款接口
 def repay_interface(username, repay_money):
     user_dic = db_handler.select(username)
     balance = user_dic['balance']
@@ -43,16 +46,17 @@ def repay_interface(username, repay_money):
         msg = "账户已被冻结，请在前台办理手续"
         return False, msg
     else:
-        balance+=repay_money
+        balance += repay_money
         user_dic['balance'] = balance
-        msg =f"【{username}】还款成功，还款金额为{repay_money}$，当前账户余额为{balance}$"
+        msg = f"【{username}】还款成功，还款金额为{repay_money}$，当前账户余额为{balance}$"
         user_dic['flow'].append(msg)
         db_handler.save(user_dic)
 
         return True, msg
 
-#转账接口
-def transfer_interface(person,username, transfer_moeney):
+
+# 转账接口
+def transfer_interface(person, username, transfer_moeney):
     user_dic = db_handler.select(username)
     person_dic = db_handler.select(person)
     if person_dic:
@@ -83,7 +87,22 @@ def transfer_interface(person,username, transfer_moeney):
         return False, msg
 
 
-#查看流水
-def  check_flow_interface(username):
+# 查看流水
+def check_flow_interface(username):
     user_dic = db_handler.select(username)
     return user_dic['flow']
+
+
+
+
+def defray_interface(username,money):
+    user_dic = db_handler.select(username)
+
+    if user_dic.get("balance")>=money:
+        user_dic["balance"] = user_dic.get("balance")-money
+        db_handler.save(user_dic)
+        return True
+    else:
+        return False
+
+

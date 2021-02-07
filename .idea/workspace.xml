@@ -1,46 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="337d80a4-2ba4-4612-82e2-8228bf2025fc" name="默认更改列表" comment="转账功能修复/流水接口/管理员接口">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/db/user_date/5.json" afterDir="false" />
+    <list default="true" id="337d80a4-2ba4-4612-82e2-8228bf2025fc" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/ATM/1.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ATM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ATM.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/core/src.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/src.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM/db/user_date/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/db/user_date/1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM/interface/user_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/interface/user_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/interface/blank_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/interface/blank_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/interface/shop_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/interface/shop_interface.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/test.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ProJect$src.coverage" NAME="src Coverage Results" MODIFIED="1612685459350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/core" />
+    <SUITE FILE_PATH="coverage/ProJect$test.coverage" NAME="test Coverage Results" MODIFIED="1612690585751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM" />
+    <SUITE FILE_PATH="coverage/ProJect$start.coverage" NAME="start Coverage Results" MODIFIED="1612321031794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="906509556">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="PNG" value="1" />
+          <entry key="json" value="1" />
+          <entry key="py" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="Python" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1665" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1665" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/interface/shop_interface.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding>
+                <element signature="e#19#44#0" expanded="true" />
+                <marker date="1612689881371" expanded="true" signature="164:413" ph="..." />
+                <marker date="1612689881371" expanded="true" signature="477:482" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/db/db_handler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/interface/blank_interface.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2828">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
+              <folding>
+                <marker date="1612689881074" expanded="true" signature="2714:2719" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/core/src.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="202" column="39" selection-start-line="202" selection-start-column="24" selection-end-line="202" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#17#1" />
+                <element signature="e#21#36#0" />
+                <element signature="e#1597#1709#0" expanded="true" />
+                <element signature="e#1915#2408#0" />
+                <element signature="e#2471#2811#0" />
+                <element signature="e#2859#2912#0" />
+                <element signature="e#2954#3602#0" />
+                <element signature="e#3642#4083#0" />
+                <element signature="e#4126#4641#0" />
+                <element signature="e#4686#4841#0" />
+                <element signature="e#5363#6010#0" />
+                <element signature="e#4991#5936#0" />
+                <element signature="e#4991#5048#1" />
+                <marker date="1612687304562" expanded="true" signature="4974:5035" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ATM/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1612690585671" expanded="true" signature="1734:1736" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ATM/start.py" />
+        <option value="$PROJECT_DIR$/ATM/core/src.py" />
+        <option value="$PROJECT_DIR$/ATM/interface/blank_interface.py" />
+        <option value="$PROJECT_DIR$/ATM/interface/shop_interface.py" />
+        <option value="$PROJECT_DIR$/ATM/test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="885" />
+    <option name="height" value="578" />
+  </component>
   <component name="ProjectId" id="1nvjUWMsNlIQ2XG0jPXHvyYNOk2" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ProJect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProJect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProJect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProJect" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProJect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProJect" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,10 +205,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.start">
-    <configuration name="src" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProJect\ATM" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="src" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ATM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +269,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ATM" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,11 +291,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.start" />
+      <item itemvalue="Python.src" />
+      <item itemvalue="Python.test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.start" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.src" />
+        <item itemvalue="Python.start" />
       </list>
     </recent_temporary>
   </component>
@@ -138,73 +315,155 @@
       <option name="presentableId" value="Default" />
       <updated>1612277474226</updated>
       <workItem from="1612277475335" duration="39000" />
-      <workItem from="1612357406938" duration="8758000" />
     </task>
-    <task id="LOCAL-00001" summary="转账功能修复/流水接口/管理员接口">
-      <created>1612364889714</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612364889714</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1762481" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.48976377" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Word Book" side_tool="true" />
+      <window_info anchor="right" id="Translation Assistant" weight="0.32980332" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Json Parser" order="5" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="转账功能修复/流水接口/管理员接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="转账功能修复/流水接口/管理员接口" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="WindowStateProjectService">
     <state x="701" y="268" key="#start" timestamp="1612277494397">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="701" y="268" key="#start/0.0.2560.1400@0.0.2560.1400" timestamp="1612277494397" />
-    <state width="2515" height="516" key="GridCell.Tab.0.bottom" timestamp="1612366453988">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2515" height="516" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1612366453988" />
-    <state width="2515" height="516" key="GridCell.Tab.0.center" timestamp="1612366453988">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2515" height="516" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1612366453988" />
-    <state width="2515" height="516" key="GridCell.Tab.0.left" timestamp="1612366453988">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2515" height="516" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1612366453988" />
-    <state width="2515" height="516" key="GridCell.Tab.0.right" timestamp="1612366453988">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2515" height="516" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1612366453988" />
     <state x="500" y="321" key="SettingsEditor" timestamp="1612277513572">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="500" y="321" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1612277513572" />
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2" timestamp="1612364932740">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="872" y="429" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1612364932740" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1612364804773">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1612364804773" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PROJECT$start.coverage" NAME="start Coverage Results" MODIFIED="1612366457966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM" />
-    <SUITE FILE_PATH="coverage/PROJECT$src.coverage" NAME="src Coverage Results" MODIFIED="1612364565408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/core" />
-    <SUITE FILE_PATH="coverage/PROJECT$test.coverage" NAME="test Coverage Results" MODIFIED="1612366399304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM" />
+    <SUITE FILE_PATH="coverage/PROJECT$start.coverage" NAME="start Coverage Results" MODIFIED="1612277580796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ATM/db/user_date/1.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/interface/user_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/conf/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/lib/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/系统架构图.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/interface/shop_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="e#19#44#0" expanded="true" />
+            <marker date="1612689881371" expanded="true" signature="164:413" ph="..." />
+            <marker date="1612689881371" expanded="true" signature="477:482" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/db/db_handler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/interface/blank_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2828">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <marker date="1612689881074" expanded="true" signature="2714:2719" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/src.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="202" column="39" selection-start-line="202" selection-start-column="24" selection-end-line="202" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#17#1" />
+            <element signature="e#21#36#0" />
+            <element signature="e#1597#1709#0" expanded="true" />
+            <element signature="e#1915#2408#0" />
+            <element signature="e#2471#2811#0" />
+            <element signature="e#2859#2912#0" />
+            <element signature="e#2954#3602#0" />
+            <element signature="e#3642#4083#0" />
+            <element signature="e#4126#4641#0" />
+            <element signature="e#4686#4841#0" />
+            <element signature="e#5363#6010#0" />
+            <element signature="e#4991#5936#0" />
+            <element signature="e#4991#5048#1" />
+            <marker date="1612687304562" expanded="true" signature="4974:5035" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1612690585671" expanded="true" signature="1734:1736" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

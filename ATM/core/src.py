@@ -55,6 +55,7 @@
 from interface.user_interface import regiseter_interface,login_interface,check_balance_interface,admin_interface
 from interface.blank_interface import withdraw_interface,repay_interface,transfer_interface,check_flow_interface
 from lib.common import passwd_md5,login_auth
+from interface.shop_interface import add_shopping_car_interface,commodity_payment_interface
 
 
 #用户是否登录：
@@ -194,9 +195,63 @@ def check_flow():
 
 
 # 8.购物功能
-@login_auth
+# @login_auth
 def shopping():
-    pass
+    err_msg = '输入正确商品编号'
+    shop_msg = '添加购物车成功'
+    # 购物车
+    shopping_cart = {}  #{商品名称：{单价：数量}}
+    while True:
+        res = input("请选择添加购物车N，or结算Y：")
+        if res == 'N':
+
+            mall = [
+                ["鼠标", 80],
+                ["电脑", 8000],
+                ["凯迪拉克", 8000000],
+                ["别墅", 8888228888888],
+            ]
+            for index,info in enumerate(mall):
+                name, price = info
+                print(f"商品编号为【{index}】,商品名称为【{name}】:单价为【{price}】")
+
+            choice = input("请输入加入购物车的商品编号：")
+            #判断是不是数字
+            if choice.isdigit():
+                choice = int(choice)
+                if choice in range(len(mall)):
+                    name,price = mall[choice]
+                            # {商品名称：{单价：数量}}
+                    if not shopping_cart:
+                        print("当前购物车为空，请添加商品")
+                        continue
+                    else:
+                        if name in shopping_cart:
+                            shopping_cart[name][price]+=1
+                        else:
+                            shopping_cart.update(
+                                {name:{price:1}}
+                            )
+                        flsg = add_shopping_car_interface(is_load,shopping_cart)
+                        if flsg:
+                            print(shop_msg)
+                else:
+                    print(err_msg)
+            else:
+                print(err_msg)
+        else:
+            if not shopping_cart:
+                print("购物车为空，请先添加商品：")
+                continue
+            elif res == 'Y':
+                #添加商城接口，用于处理商品支付
+                flag,msg = commodity_payment_interface(is_load,shopping_cart)
+
+
+
+        break
+
+
 # 9.查看购物车
 @login_auth
 def check_buy_car():
